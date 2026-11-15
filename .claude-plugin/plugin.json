@@ -1,7 +1,7 @@
 {
   "name": "linkedin-skills",
-  "description": "A collection of Claude skills for working on LinkedIn: writing, engagement, profile and planning.",
-  "version": "0.1.0",
+  "description": "Eleven Claude skills for LinkedIn: posts from 21 hook formulas, comments, replies, profile scoring, weekly plans, DMs, inbox triage, carousels, repurposing, post audits, and a humanizer that cleans and scores every draft.",
+  "version": "1.0.0",
   "author": {
     "name": "Sai Medavarapu",
     "url": "https://github.com/smedavarapu1"
@@ -9,5 +9,12 @@
   "homepage": "https://github.com/smedavarapu1/linkedin-skills",
   "repository": "https://github.com/smedavarapu1/linkedin-skills",
   "license": "MIT",
-  "keywords": ["linkedin", "content", "writing", "social", "claude-skills"]
+  "keywords": [
+    "linkedin",
+    "content",
+    "writing",
+    "humanizer",
+    "social",
+    "claude-skills"
+  ]
 }

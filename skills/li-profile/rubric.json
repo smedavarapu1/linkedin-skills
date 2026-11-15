@@ -1,0 +1,91 @@
+{
+  "version": "1.0",
+  "total": 100,
+  "note": "Score every item strictly. A flattering score is useless; most profiles land between 30 and 50 on a first pass. Full marks describe what earns all the points, partial credit is a judgement call, and the reason must be stated for each score.",
+  "items": [
+    {
+      "id": "headline",
+      "label": "Headline",
+      "points": 12,
+      "full_marks": "Says who the user helps and what changes for them, includes one piece of proof, and is not just a job title. Uses most of the 220 characters.",
+      "common_misses": ["job title only", "'Helping X do Y' with nothing specific", "a list of buzzwords separated by pipes"]
+    },
+    {
+      "id": "about_opening",
+      "label": "About: first two lines",
+      "points": 10,
+      "full_marks": "The two lines visible before 'see more' name the reader's problem or the result the user delivers. No 'passionate about', no third-person bio, does not start with the user's name.",
+      "common_misses": ["opens with 'I am a results-driven...'", "career history in line one"]
+    },
+    {
+      "id": "about_body",
+      "label": "About: body",
+      "points": 10,
+      "full_marks": "Written to one reader: their problem, what the user does about it, one concrete proof point with a number, and a clear next step. Under about 1,400 characters.",
+      "common_misses": ["CV in paragraph form", "no next step", "no proof"]
+    },
+    {
+      "id": "featured",
+      "label": "Featured section",
+      "points": 8,
+      "full_marks": "Three items: the strongest post, a proof asset (case study, portfolio, talk), and a way to get in touch.",
+      "common_misses": ["empty", "an old certificate", "a dead link"]
+    },
+    {
+      "id": "photo",
+      "label": "Profile photo",
+      "points": 6,
+      "full_marks": "Recent, face fills most of the frame, good light, plain background, looks like the user does on a video call.",
+      "common_misses": ["cropped group photo", "tiny face", "years out of date"]
+    },
+    {
+      "id": "banner",
+      "label": "Banner",
+      "points": 6,
+      "full_marks": "Custom image with one line of positioning and one way to reach the user, readable on mobile.",
+      "common_misses": ["default background", "stock photo with no text"]
+    },
+    {
+      "id": "experience_current",
+      "label": "Current role",
+      "points": 10,
+      "full_marks": "One line of scope (team, budget, customers) and 2-3 bullets that are outcomes with numbers, not duties.",
+      "common_misses": ["blank description", "list of responsibilities"]
+    },
+    {
+      "id": "experience_history",
+      "label": "Earlier roles",
+      "points": 8,
+      "full_marks": "Recent roles each have at least one result with a number. Roles older than about ten years are trimmed to a line.",
+      "common_misses": ["copy-pasted job descriptions", "every role equally long"]
+    },
+    {
+      "id": "skills",
+      "label": "Skills",
+      "points": 6,
+      "full_marks": "Top three pinned skills match what the headline promises and what the user wants to be found for.",
+      "common_misses": ["top skills are 'Microsoft Office' and 'Teamwork'"]
+    },
+    {
+      "id": "recommendations",
+      "label": "Recommendations",
+      "points": 8,
+      "full_marks": "At least three from the last few years, from managers, clients or peers, mentioning specific results.",
+      "common_misses": ["none", "only from many years ago"]
+    },
+    {
+      "id": "activity",
+      "label": "Activity",
+      "points": 10,
+      "full_marks": "Posted or commented meaningfully in the last 30 days, on topics that match the headline.",
+      "common_misses": ["no activity for months", "only reshares without comment"]
+    },
+    {
+      "id": "custom_url_contact",
+      "label": "Custom URL and contact info",
+      "points": 6,
+      "full_marks": "Custom profile URL with the user's name, and at least one working contact method or link in contact info.",
+      "common_misses": ["auto-generated URL with numbers", "no contact info"]
+    }
+  ]
+}

@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "linkedin-skills",
-      "description": "A collection of Claude skills for working on LinkedIn.",
+      "description": "Eleven Claude skills for LinkedIn, including a humanizer that cleans each draft and scores it on five checks.",
       "source": "./",
       "category": "productivity",
       "homepage": "https://github.com/smedavarapu1/linkedin-skills"

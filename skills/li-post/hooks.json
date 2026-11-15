@@ -1,0 +1,180 @@
+{
+  "version": "1.0",
+  "note": "Opening-line formulas for LinkedIn posts. The first line has to work on its own: mobile cuts the preview at roughly 140 characters. Pick by what the idea actually is, never by habit. Examples are illustrations only; never reuse their numbers as if they were the user's.",
+  "rules": [
+    "The hook is one line, alone, with a blank line under it.",
+    "Line two pays off line one. It is not more setup.",
+    "A hook must be true for this user. If it needs a number they have not given, ask for it.",
+    "Three options from three different formulas, never three versions of one."
+  ],
+  "hooks": [
+    {
+      "id": 1,
+      "name": "Contrarian",
+      "template": "{Common advice} is wrong. Here's what worked instead.",
+      "example": "Posting every day was the worst thing I did for my reach.",
+      "use_when": "The user holds a real position against the default advice in their field.",
+      "ruined_by": "Picking a fight with a strawman nobody actually believes."
+    },
+    {
+      "id": 2,
+      "name": "Before / After",
+      "template": "{Time} ago I {old state}. Today I {new state}.",
+      "example": "Last spring our support queue was 3 days behind. This week it hit zero by Tuesday.",
+      "use_when": "There is a measurable change and the user knows what caused it.",
+      "ruined_by": "Skipping the middle. The post is the how, not the glow-up."
+    },
+    {
+      "id": 3,
+      "name": "Owned Mistake",
+      "template": "I {did something wrong} and it cost {specific cost}.",
+      "example": "I hired for culture fit and lost a quarter to it.",
+      "use_when": "The user made a mistake they can name and price.",
+      "ruined_by": "A humble-brag dressed as a mistake ('my flaw is I care too much')."
+    },
+    {
+      "id": 4,
+      "name": "The Number",
+      "template": "{Surprising number}. {What it means in five words}.",
+      "example": "71 cold emails. 2 replies. Both from the subject line I almost cut.",
+      "use_when": "One figure carries the whole story.",
+      "ruined_by": "A vanity metric with no context, or a number the user can't back up."
+    },
+    {
+      "id": 5,
+      "name": "Specific List",
+      "template": "{N} things I {learned/changed/stopped} after {specific experience}:",
+      "example": "4 things I stopped doing after running 60 interviews in one month:",
+      "use_when": "The lessons are genuinely separate and each one stands alone.",
+      "ruined_by": "Generic tools or tips anyone could list. The experience is the hook, not the list."
+    },
+    {
+      "id": 6,
+      "name": "Overheard Line",
+      "template": "\"{Something someone actually said}\"",
+      "example": "\"We don't need a process, we need fewer meetings.\" - our newest engineer, day 3.",
+      "use_when": "A real quote triggered the idea.",
+      "ruined_by": "Invented dialogue. If nobody said it, don't quote it."
+    },
+    {
+      "id": 7,
+      "name": "Question Nobody Asks",
+      "template": "Why does nobody {question about an accepted practice}?",
+      "example": "Why do we interview for 5 hours and onboard for 30 minutes?",
+      "use_when": "The user has noticed a real gap in how things are done.",
+      "ruined_by": "A question with an obvious answer, or one the post never answers."
+    },
+    {
+      "id": 8,
+      "name": "Scene",
+      "template": "{Time and place}. {What happened, in one plain sentence}.",
+      "example": "Friday, 6:40pm. Our biggest client emailed asking for the contract termination clause.",
+      "use_when": "There is a story with a moment of tension.",
+      "ruined_by": "Starting with backstory instead of the moment."
+    },
+    {
+      "id": 9,
+      "name": "Unpopular Admission",
+      "template": "I {do something people are told not to}, and I'm not stopping.",
+      "example": "I still reply to every recruiter, even when I'm not looking.",
+      "use_when": "The user has a habit that cuts against advice and a reason for it.",
+      "ruined_by": "Fake rebellion. It has to be something that really draws pushback."
+    },
+    {
+      "id": 10,
+      "name": "Cost of Waiting",
+      "template": "I waited {time} to {do the thing}. It cost me {cost}.",
+      "example": "I waited two years to raise prices. That was roughly 30% of revenue left on the table.",
+      "use_when": "Delay had a measurable cost.",
+      "ruined_by": "No real cost stated. Without the cost, there is no post."
+    },
+    {
+      "id": 11,
+      "name": "Side by Side",
+      "template": "{Option A} vs {Option B}. {Which won, unexpectedly}.",
+      "example": "A paid course vs a weekend reading the docs. The docs won.",
+      "use_when": "The user compared two things directly.",
+      "ruined_by": "A comparison where the winner is obvious from the start."
+    },
+    {
+      "id": 12,
+      "name": "Rule I Follow",
+      "template": "My one rule for {situation}: {rule}.",
+      "example": "My one rule for code review: never leave a comment I wouldn't say out loud.",
+      "use_when": "The user has a short principle they actually apply.",
+      "ruined_by": "A platitude. If no one would disagree, it's not a rule worth a post."
+    },
+    {
+      "id": 13,
+      "name": "Behind the Number",
+      "template": "{Impressive result}. Here's the unglamorous part.",
+      "example": "We closed our biggest deal this year. It took 14 months and 3 lost champions.",
+      "use_when": "A win has a messy story behind it.",
+      "ruined_by": "Turning the unglamorous part into another flex."
+    },
+    {
+      "id": 14,
+      "name": "Prediction",
+      "template": "In {timeframe}, {specific prediction}. Here's why.",
+      "example": "By 2028, most job applications will be read by an agent before a person.",
+      "use_when": "The user has a reasoned, specific view about where their field is going.",
+      "ruined_by": "Vague futurism. Name a date and something checkable."
+    },
+    {
+      "id": 15,
+      "name": "Small Change, Big Effect",
+      "template": "One {tiny change} {big result}.",
+      "example": "Moving our standup from 9:00 to 11:30 cut 'quick sync' meetings in half.",
+      "use_when": "A minor tweak had an outsized result.",
+      "ruined_by": "Overclaiming causation. Say what else changed too."
+    },
+    {
+      "id": 16,
+      "name": "Advice I Ignored",
+      "template": "Someone told me {advice}. I ignored it for {time}. They were right.",
+      "example": "My first manager told me to write things down. I ignored it for 6 years.",
+      "use_when": "The user learned something late and can say what it cost.",
+      "ruined_by": "No consequence. The gap between ignoring and learning is the post."
+    },
+    {
+      "id": 17,
+      "name": "Time Compression",
+      "template": "{Task} used to take {long time}. Now it takes {short time}.",
+      "example": "Month-end reporting used to take me two days. Now it's 40 minutes.",
+      "use_when": "There is a real, measured speed-up and the user can explain how.",
+      "ruined_by": "Numbers that look made up. Round, believable figures beat dramatic ones."
+    },
+    {
+      "id": 18,
+      "name": "The Ask I Got",
+      "template": "A {role} asked me {question}. My answer surprised them.",
+      "example": "A new grad asked me how to get promoted. I told them to stop asking.",
+      "use_when": "Someone asked the user a real question worth answering publicly.",
+      "ruined_by": "A made-up question, or an answer that isn't surprising."
+    },
+    {
+      "id": 19,
+      "name": "Walk Away",
+      "template": "I said no to {something attractive}. Here's why.",
+      "example": "I turned down a 30% raise last month.",
+      "use_when": "The user declined something most people would take.",
+      "ruined_by": "Virtue signalling. Give the real reasoning, including the doubt."
+    },
+    {
+      "id": 20,
+      "name": "Myth Check",
+      "template": "Everyone says {belief}. The data I have says {different thing}.",
+      "example": "Everyone says Tuesdays are the best day to post. My last 40 posts say it doesn't matter.",
+      "use_when": "The user has their own data that contradicts a common belief.",
+      "ruined_by": "Too small a sample presented as proof. State the n."
+    },
+    {
+      "id": 21,
+      "name": "Give It Away",
+      "template": "Here's the {template/checklist/script} I use for {task}. Take it.",
+      "example": "Here's the 5-line email I send when a deal goes quiet. Copy it.",
+      "use_when": "The user has a reusable asset and is willing to share it in full.",
+      "ruined_by": "Gating it behind 'comment YES and I'll DM you'. Put it in the post."
+    }
+  ]
+}
