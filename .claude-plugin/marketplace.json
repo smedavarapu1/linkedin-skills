@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "linkedin-skills",
+  "description": "LinkedIn skill pack for Claude",
+  "owner": {
+    "name": "Sai Medavarapu",
+    "url": "https://github.com/smedavarapu1"
+  },
+  "plugins": [
+    {
+      "name": "linkedin-skills",
+      "description": "A collection of Claude skills for working on LinkedIn.",
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://github.com/smedavarapu1/linkedin-skills"
+    }
+  ]
+}

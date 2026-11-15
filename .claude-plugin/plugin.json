@@ -1,0 +1,13 @@
+{
+  "name": "linkedin-skills",
+  "description": "A collection of Claude skills for working on LinkedIn: writing, engagement, profile and planning.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Sai Medavarapu",
+    "url": "https://github.com/smedavarapu1"
+  },
+  "homepage": "https://github.com/smedavarapu1/linkedin-skills",
+  "repository": "https://github.com/smedavarapu1/linkedin-skills",
+  "license": "MIT",
+  "keywords": ["linkedin", "content", "writing", "social", "claude-skills"]
+}
