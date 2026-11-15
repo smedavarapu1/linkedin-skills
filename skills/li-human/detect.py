@@ -197,8 +197,10 @@ def main():
     ap.add_argument("--lexicon", default=DEFAULT_LEXICON, help="path to slop.json")
     args = ap.parse_args()
 
-    if hasattr(sys.stdout, "reconfigure"):
-        sys.stdout.reconfigure(encoding="utf-8")
+    # Windows defaults stdin/stdout to a legacy code page; force UTF-8
+    for stream in (sys.stdin, sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8")
 
     with open(args.lexicon, encoding="utf-8") as fh:
         lex = json.load(fh)
