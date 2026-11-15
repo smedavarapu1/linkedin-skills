@@ -12,6 +12,31 @@ description: >-
 
 Score honestly, then fix in order of points lost.
 
+## Humanize gate (required, every time)
+
+No text from this skill is shown to the user until it has passed through the
+humanizer. No exceptions: short comments, one-line replies, headlines, hook
+options, "quick" drafts and revisions all go through it.
+
+1. Write everything you're about to show into a temp file. Put a line with
+   only `---` between separate pieces (each option, comment, reply, slide,
+   message).
+2. Run the gate from this skill's folder (use `python3` if `python` isn't
+   found):
+   `python ../li-human/gate.py draft.txt -o clean.txt`
+3. If any piece is flagged or not PASS, rewrite those lines by hand in the
+   user's voice and run the gate again. At most three rounds; if a piece
+   still fails, show it but say which check failed.
+4. Show the user only the text from `clean.txt`, never the pre-gate draft.
+   Re-run the gate after every edit the user asks for.
+5. End the reply with the gate's receipt line, exactly as printed, e.g.
+   `humanized: 3 pieces · 7 fixes · 86 PASS / SHORT PASS / SHORT PASS`.
+   A draft without a receipt line has not been through the gate.
+
+If Python can't run here, say so plainly, apply `../li-human/slop.json` by
+hand, and label the text **not machine-checked**. Never skip the gate
+silently.
+
 ## Input
 
 Ask the user to paste: headline, about section, current role and the two

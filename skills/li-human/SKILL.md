@@ -13,8 +13,31 @@ description: >-
 # li-human
 
 The other skills write. This one makes sure what they wrote sounds like a
-person. It has two scripts that live next to this file; run them rather than
-judging by eye.
+person. Its scripts live next to this file; run them rather than judging by
+eye.
+
+## The gate (what every other skill runs)
+
+```bash
+python gate.py draft.txt -o clean.txt
+```
+
+`gate.py` humanizes every piece in the file (pieces separated by a line
+containing only `---`), scores each one, lists the lines that need a hand
+rewrite, and ends with a receipt such as
+`humanized: 2 pieces · 5 fixes · 84 PASS / SHORT PASS`. Exit code 0 means
+everything passed.
+
+Pieces under 40 words (comments, replies, connection notes, headlines) are
+too short for rhythm and voice scores, so they get **SHORT PASS** only when
+they have no stock words, no invisible characters or fancy typography, and no
+structural flags.
+
+The rule for every li-* skill: show the user only the gate's cleaned output,
+always with the receipt line, and re-run it after every edit. The same applies
+when this skill is used directly on the user's own text.
+
+## The underlying tools
 
 ```bash
 python humanize.py draft.txt -o clean.txt --report   # clean + list every change

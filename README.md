@@ -60,10 +60,22 @@ The skills share state in `~/.claude/linkedin/`:
 
 ## The humanizer
 
-[`skills/li-human`](skills/li-human) has two dependency-free Python scripts
-that run locally:
+**Every skill that writes text runs it, every time.** Before you see a post,
+comment, reply, DM, profile section or slide, the skill runs
+[`gate.py`](skills/li-human/gate.py), rewrites anything it flags, and shows
+you only the cleaned version, ending with a receipt line:
+
+```
+humanized: 3 pieces · 7 fixes · 86 PASS / SHORT PASS / SHORT PASS
+```
+
+No receipt line means the gate didn't run. Ask for it.
+
+[`skills/li-human`](skills/li-human) has dependency-free Python scripts that
+run locally:
 
 ```bash
+python gate.py draft.txt -o clean.txt                # what the skills run: clean + score + receipt
 python humanize.py draft.txt -o clean.txt --report   # clean it, list the changes
 python detect.py clean.txt                           # score it
 python detect.py draft.txt clean.txt                 # before vs after
