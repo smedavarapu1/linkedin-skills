@@ -1,5 +1,11 @@
 # linkedin-skills
 
+[![CI](https://github.com/smedavarapu1/linkedin-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/smedavarapu1/linkedin-skills/actions/workflows/ci.yml)
+![Skills](https://img.shields.io/badge/skills-11-0A66C2)
+![Python](https://img.shields.io/badge/python-3.8%2B-3776AB)
+![Dependencies](https://img.shields.io/badge/dependencies-none-brightgreen)
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
+
 Eleven [Claude Code](https://claude.com/claude-code) skills for running a
 LinkedIn presence: posts, comments, replies, profile, weekly plan, DMs,
 inbox, carousels, repurposing, analytics, and a humanizer that cleans and
